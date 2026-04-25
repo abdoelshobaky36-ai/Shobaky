@@ -1043,7 +1043,6 @@
           '📱 الواتساب: ' + phone + '\n' +
           '📧 الإيميل: ' + email + '\n' +
           '📊 المستوى: ' + level + '\n' +
-          '🍽️ الأكل المفضل: ' + (food || 'لم يذكر') + '\n\n' +
           '📦 الباقة: ' + pkgName + '\n' +
           '💰 السعر: ' + pkgNew + ' (بدل ' + pkgOld + ')\n' +
           '💳 طريقة الدفع: ' + payLabel + '\n' +
@@ -1051,8 +1050,7 @@
           '⬆️ يرجى إرفاق صورة التحويل في الرسالة التالية\n' +
           '🔗 الموقع: shobaky.com'
         );
-        window.open('https://wa.me/201002046892?text=' + waMsg, '_blank');
-
+      const url = "https://api.whatsapp.com/send?phone=20102046892&text=" + encodeURIComponent(message);
         showToast('success', 'تم إرسال طلبك بنجاح! ✅', 'ابعت صورة التحويل على الواتساب وهيتأكد خلال 24 ساعة عمل');
       }, 2200);
     }
