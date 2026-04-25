@@ -800,7 +800,7 @@
               <div class="program-option" data-id="gold" data-name="Gold Package" data-new="1,000 جنيه" data-old="1,500 جنيه" onclick="pickProgram(this)">
                 <div class="po-radio"></div>
                 <div class="po-info"><div class="po-name">Gold Package — 1 شهر ⭐</div><div class="po-desc">كوتش مباشر — مكالمات — متابعة أسبوعية — أونلاين كوتشينج</div></div>
-                <div class="po-price">1 جنيه</div>
+                <div class="po-price">1200 جنيه</div>
               </div>
               <div class="program-option" data-id="vip" data-name="VIP Package" data-new="2,999 جنيه" data-old="6,000 جنيه" onclick="pickProgram(this)">
                 <div class="po-radio"></div>
@@ -1050,8 +1050,11 @@
           '⬆️ يرجى إرفاق صورة التحويل في الرسالة التالية\n' +
           '🔗 الموقع: shobaky.com'
         );
-    const url = "https://wa.me/20102046892?text=" + encodeURIComponent(message);
-window.location.href = url;
+  var waDeep = 'whatsapp://send?phone=201002046892&text=' + waMsg;
+var waWeb = 'https://wa.me/201002046892?text=' + waMsg;
+var t0 = Date.now();
+window.location.href = waDeep;
+setTimeout(function(){ if(Date.now()-t0 < 2500) window.open(waWeb,'_blank'); }, 2000);
         showToast('success', 'تم إرسال طلبك بنجاح! ✅', 'ابعت صورة التحويل على الواتساب وهيتأكد خلال 24 ساعة عمل');
       }, 2200);
     }
