@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -664,7 +664,7 @@
     <div class="container">
       <div class="animate-on-scroll" style="text-align:center;">
         <span class="section-label"><iconify-icon icon="lucide:trophy" style="font-size:0.9rem;"></iconify-icon> النتائج</span>
-        <h2 class="section-title">تحويلات <span class="accent">حقيقية</span> — اضغط لتكبير</h2>
+        <h2 class="section-title">تحولات <span class="accent">حقيقية</span> — اضغط لتكبير</h2>
       </div>
       <div class="transformations-grid">
         <div class="transform-card animate-on-scroll d1" onclick="openLightbox(this)">
@@ -800,7 +800,7 @@
               <div class="program-option" data-id="gold" data-name="Gold Package" data-new="1,000 جنيه" data-old="1,500 جنيه" onclick="pickProgram(this)">
                 <div class="po-radio"></div>
                 <div class="po-info"><div class="po-name">Gold Package — 1 شهر ⭐</div><div class="po-desc">كوتش مباشر — مكالمات — متابعة أسبوعية — أونلاين كوتشينج</div></div>
-                <div class="po-price">1200 جنيه</div>
+                <div class="po-price">1,000 جنيه</div>
               </div>
               <div class="program-option" data-id="vip" data-name="VIP Package" data-new="2,999 جنيه" data-old="6,000 جنيه" onclick="pickProgram(this)">
                 <div class="po-radio"></div>
@@ -1043,13 +1043,15 @@
           '📱 الواتساب: ' + phone + '\n' +
           '📧 الإيميل: ' + email + '\n' +
           '📊 المستوى: ' + level + '\n' +
+          '🍽️ الأكل المفضل: ' + (food || 'لم يذكر') + '\n\n' +
           '📦 الباقة: ' + pkgName + '\n' +
           '💰 السعر: ' + pkgNew + ' (بدل ' + pkgOld + ')\n' +
           '💳 طريقة الدفع: ' + payLabel + '\n' +
           '📞 رقم الدفع: 01002046892\n\n' +
           '⬆️ يرجى إرفاق صورة التحويل في الرسالة التالية\n' +
+          '🔗 الموقع: shobaky.com'
         );
-  var waDeep = 'whatsapp://send?phone=201002046892&text=' + waMsg;
+          var waDeep = 'whatsapp://send?phone=201002046892&text=' + waMsg;
 var waWeb = 'https://wa.me/201002046892?text=' + waMsg;
 var t0 = Date.now();
 window.location.href = waDeep;
