@@ -1051,6 +1051,7 @@
           '🔗 الموقع: shobaky.com'
         );
       const url = "https://api.whatsapp.com/send?phone=20102046892&text=" + encodeURIComponent(message);
+window.open(url, "_blank");
         showToast('success', 'تم إرسال طلبك بنجاح! ✅', 'ابعت صورة التحويل على الواتساب وهيتأكد خلال 24 ساعة عمل');
       }, 2200);
     }
